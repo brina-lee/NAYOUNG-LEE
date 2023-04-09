@@ -1,2 +1,4 @@
 # NAYOUNG-LEE
-Nayoung Lee's Portfolio
+### Nayoung Lee's Portfolio
+
+NaYoung Lee. All rights reserved.
