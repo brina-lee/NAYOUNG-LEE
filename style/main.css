@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+/*---------------------------기본 색상---------------------------*/
+:root {
+    --main-color: #000000;
+    --accent-color: #000000;
+    --dark-color: #000000;
+    --text-bright-color: #ffffff;
+    --dark-main-coclor: #000000;
+    --gray-color: #dddddd;
+    --middle-width: 800px;
+}
+
+/*---------------------------기본 설정:페이지 전체---------------------------*/
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Noto Sans KR', Arial;
+}
+
+.no_dot {
+    list-style-type: none;
+    padding: 0;
+  }
+ 
+a {
+    text-decoration: none;
+    text-decoration-color: #000000;
+}
+
+/*---------------------------conA: 히어로이미지---------------------------*/
+.conA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 450px;
+    background-image: url(image/bgi.jpg);
+    background-position: center;
+    background-size: cover;
+    /*color: #ffffff;
+    color: var(--text-bright-color);*/
+    text-align: center;
+}
+.conA h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: 'Bebas Neue', cursive;;
+    font-size: 8vw;
+    letter-spacing: 0.2em;
+    margin-left: 0.2em;
+}
+.conA p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 11px;
+    color: #000000;
+}
+
+.conA img {
+    width: 10%;
+}
+
+.conA a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #bf6a7a;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    color: var(--text-bright-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.conA a:hover {
+    background-image: linear-gradient(
+        rgba(225,225,225,0.2)
+        rgba(225,225,225,0.2)
+    );
+}
+
+@media (min-width: 768px) {
+    .conA h1 {
+        font-size: 70px;
+    }
+    .conA p {
+        font-size: 17px;
+    }
+}
+
+/*---------------------------footer---------------------------*/
+footer {
+    color: #ffffff;
+    color: var(--text-bright-color);  
+    background-color: #000000;
+    background-color: var(--dark-main-coclor);
+}
+
+footer .container {
+    padding: 40px 20px;
+}
+
+@media (min-width: 768px) {
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footA {
+        flex: 0 0 30%;
+    }
+    .footB{
+        flex: 0 0 70%;
+    }
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+/* footerA: 사이트 정보*/
+.footA {
+    margin-bottom: 30px;
+}
+
+.footA h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Bebas Neue', cursive;;
+    font-size: 1.7rem;
+    letter-spacing: 0.2em;
+}
+
+.footA p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+/*---------------------------footerB: 푸터 메뉴---------------------------*/
+.footB div {
+    margin-bottom: 20px;
+}
+
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: solid 1px currentColor;
+    font-size: 0.9rem;
+}
+
+.footB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footB a {
+    display: block;
+    padding: 5px;
+    color: inherit;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.footB a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px) {
+    .footB {
+        display: flex;
+    }
+    .footB div {
+        flex: 1;
+    }
+    .footB div:not(:first-child) {
+        margin-left: 25px;
+    }
+}
+
+/*---------------------------footerC: 저작권---------------------------*/
+.footC {
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/*---------------------------header---------------------------*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.nohero header {
+    position: static;
+    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--gray-color);
+}
+
+/*---------------------------hearderA: 사이트 이름---------------------------*/
+.headA {
+    display: inline-block;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/*---------------------------headerB: 내비게이션 메뉴---------------------------*/
+.headB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.headB a {
+    display: block;
+    padding: 10px;
+    color: inherit;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.headB a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .headB ul {
+        display: flex;
+    }
+}
+
+/*---------------------------Project---------------------------*/
+.project .container {
+    padding: 30px 10px;
+    max-width: 600px;
+    max-width: var(--middle-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project h2 {
+    font-size: 1.7rem;
+    margin: 18px 0;
+}
+
+.project h5 h6 {
+    font-size: 1rem;
+    line-height: 2;
+    margin: 14px 0;
+}
+
+.project p, ul, li {
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+.project img {
+    max-width: 100%
+}
+
+/*---------------------------Profile---------------------------*/
+.profile {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.profile .container {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.profiles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: solid 1px #ddd;
+    border: solid 1px var(--gray-color);
+    text-align: center;
+}
+
+.profiles h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 18px 0;
+}
+
+.profiles h2 {
+    font-size: 1.7rem;
+}
+
+.profiles h5 h6 {
+    font-size: 1rem;
+    line-height: 2;
+    margin: 14px 0;
+}
+
+.profiles p {
+    font-size: 0.8rem;
+    line-height: 2;
+}
