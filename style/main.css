@@ -11,7 +11,7 @@
     --text-bright-color: #ffffff;
     --dark-main-coclor: #000000;
     --gray-color: #dddddd;
-    --middle-width: 1400px;
+    --middle-width: 1000px;
 }
 
 /*전체 페이지*/
@@ -133,7 +133,7 @@ footer .container {
     }
 }
 
-/*Desktop: header---------------------------*/
+/*Desktop: header------------------------------------------------------*/
 /*Desktop: main header*/
 header {
     position: absolute;
@@ -258,48 +258,48 @@ header {
 }
 
 /*Desktop: career, project 페이지-----------------------------------------------------*/
-.project .container {
+
+.projects {
+    margin: auto;
     padding: 30px 10px;
     max-width: var(--middle-width);
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
-.project h2 {
+.projects h2 {
     font-size: 1.7rem;
     margin: 18px 0;
 }
 
-.project h5 h6 {
+.projects h4 {
+    font-size: 1.3rem;
+    margin: 12px 0;
+}
+
+.projects h5 {
+    text-align: left;
     font-size: 1rem;
     line-height: 2;
     margin: 14px 0;
 }
 
-.project p, ul, li {
+.projects p, ul, li {
+    text-align: left;
     font-size: 0.8rem;
     line-height: 2;
 }
 
-.project img {
-    max-width: 70%
+.projects img {
+    max-width: 100%
 }
 
 hr {
     border: dotted 1px #484848;
-    text-align: center;
     margin: 20px;
 }
 
-.projects h5 h6 {
-    font-size: 1rem;
-    line-height: 2;
-    margin: 14px 0;
-}
-
-.projects img {
-    max-width: 70%
-}
 
 /*Desktop: profile 페이지-----------------------------------------------------*/
 .profile {
@@ -308,14 +308,10 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
+    text-align: center;
 }
 
-.profile .container {
-    padding: 0px;
-    margin-top: 0px;
-}
-
-.profiles {
+.contacts {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
@@ -324,24 +320,18 @@ hr {
     text-align: center;
 }
 
-.profiles h3 {
-    margin-top: 0;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 18px 0;
-}
-
-.profiles h2 {
+.profile h2 {
     font-size: 1.7rem;
 }
 
-.profiles h5 h6 {
+.profile h6 {
     font-size: 1rem;
     line-height: 2;
     margin: 14px 0;
 }
 
-.profiles p {
+.profile p, ul, li {
+    text-align: left;
     font-size: 0.8rem;
     line-height: 2;
 }
