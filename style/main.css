@@ -325,13 +325,19 @@ hr {
 }
 
 .profile h6 {
+    text-align: left;
     font-size: 1rem;
     line-height: 2;
     margin: 14px 0;
 }
 
-.profile p, ul, li {
+.profile ul, li {
     text-align: left;
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+.profile p {
     font-size: 0.8rem;
     line-height: 2;
 }
